@@ -1,0 +1,983 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "JWANG23SQL2016SSDB ",
+        "connectionString": "Provider=SQLNCLI11;Data Source=JWANG23\\SQL2016SSDB;Initial Catalog=Crash_Data_DB_Complete;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "jinwang",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "CRASH_DATA_T",
+        "columns": [
+          {
+            "name": "CRASH_KEY",
+            "dataType": "int64",
+            "sourceColumn": "CRASH_KEY",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CASENUMBER",
+            "dataType": "int64",
+            "sourceColumn": "CASENUMBER",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "CRASH_DATE_Full",
+            "dataType": "string",
+            "sourceColumn": "CRASH_DATE_Full",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "CRASH_DATE",
+            "dataType": "dateTime",
+            "sourceColumn": "CRASH_DATE",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "CRASH_MONTH",
+            "dataType": "int64",
+            "sourceColumn": "CRASH_MONTH",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "CRASH_DAY",
+            "dataType": "int64",
+            "sourceColumn": "CRASH_DAY",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "TIMESTR",
+            "dataType": "string",
+            "sourceColumn": "TIMESTR",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "DISTRICT",
+            "dataType": "int64",
+            "sourceColumn": "DISTRICT",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "COUNTY_NUMBER",
+            "dataType": "int64",
+            "sourceColumn": "COUNTY_NUMBER",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "CITYNAME",
+            "dataType": "int64",
+            "sourceColumn": "CITYNAME",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "FRSTHARM",
+            "dataType": "int64",
+            "sourceColumn": "FRSTHARM",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "LOCFSTHRM",
+            "dataType": "int64",
+            "sourceColumn": "LOCFSTHRM",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "CRCOMNNR",
+            "dataType": "int64",
+            "sourceColumn": "CRCOMNNR",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "MAJCSE",
+            "dataType": "int64",
+            "sourceColumn": "MAJCSE",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "DRUGALC",
+            "dataType": "int64",
+            "sourceColumn": "DRUGALC",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "LIGHT",
+            "dataType": "int64",
+            "sourceColumn": "LIGHT",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "CSRFCND",
+            "dataType": "int64",
+            "sourceColumn": "CSRFCND",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "WEATHER",
+            "dataType": "int64",
+            "sourceColumn": "WEATHER",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "RCNTCRC",
+            "dataType": "int64",
+            "sourceColumn": "RCNTCRC",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "RDTYP",
+            "dataType": "int64",
+            "sourceColumn": "RDTYP",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "PAVED",
+            "dataType": "int64",
+            "sourceColumn": "PAVED",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "CSEV",
+            "dataType": "int64",
+            "sourceColumn": "CSEV",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "FATALITIES",
+            "dataType": "int64",
+            "sourceColumn": "FATALITIES",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "INJURIES",
+            "dataType": "int64",
+            "sourceColumn": "INJURIES",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "MAJINJURY",
+            "dataType": "int64",
+            "sourceColumn": "MAJINJURY",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "MININJURY",
+            "dataType": "int64",
+            "sourceColumn": "MININJURY",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "POSSINJURY",
+            "dataType": "int64",
+            "sourceColumn": "POSSINJURY",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "UNKINJURY",
+            "dataType": "int64",
+            "sourceColumn": "UNKINJURY",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "PROPDMG",
+            "dataType": "int64",
+            "sourceColumn": "PROPDMG",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "VEHICLES",
+            "dataType": "int64",
+            "sourceColumn": "VEHICLES",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "TOCCUPANTS",
+            "dataType": "string",
+            "sourceColumn": "TOCCUPANTS",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "REPORT",
+            "dataType": "int64",
+            "sourceColumn": "REPORT",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "XCOORD",
+            "dataType": "int64",
+            "sourceColumn": "XCOORD",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "YCOORD",
+            "dataType": "int64",
+            "sourceColumn": "YCOORD",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "OBJECTID",
+            "dataType": "string",
+            "sourceColumn": "OBJECTID",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CRASH_DATA_GT_2015",
+            "source": {
+              "query": [
+                "SELECT [dbo].[CRASH_DATA_T].* FROM [dbo].[CRASH_DATA_T]",
+                "WHERE Crash_date >= '01/01/2015'"
+              ],
+              "dataSource": "JWANG23SQL2016SSDB "
+            },
+            "annotations": [
+              {
+                "name": "QueryEditorSerialization",
+                "value": [
+                  "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATA[<RSQueryCommandText>SELECT [dbo].[CRASH_DATA_T].* FROM [dbo].[CRASH_DATA_T]",
+                  "WHERE Crash_date >= '01/01/2015'</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "CRASH_DATA_LT_2015",
+            "mode": "import",
+            "source": {
+              "query": [
+                "SELECT [dbo].[CRASH_DATA_T].* FROM [dbo].[CRASH_DATA_T]",
+                "WHERE Crash_date < '01/01/2015'"
+              ],
+              "dataSource": "JWANG23SQL2016SSDB "
+            },
+            "annotations": [
+              {
+                "name": "QueryEditorSerialization",
+                "value": [
+                  "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATA[<RSQueryCommandText>SELECT [dbo].[CRASH_DATA_T].* FROM [dbo].[CRASH_DATA_T]",
+                  "WHERE Crash_date < '01/01/2015'</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+                ]
+              }
+            ]
+          }
+        ],
+        "measures": [
+          {
+            "name": "Sum_of_Fatalities",
+            "expression": "SUM(CRASH_DATA_T[FATALITIES])",
+            "formatString": "#,0",
+            "displayFolder": "Injury_Calculations",
+            "kpi": {
+              "targetExpression": "'CRASH_DATA_T'[Last_Year_Fatalities]",
+              "targetFormatString": "#,0",
+              "statusGraphic": "Road Signs",
+              "statusExpression": [
+                "var x='CRASH_DATA_T'[Sum_of_Fatalities]/'CRASH_DATA_T'[_Sum_of_Fatalities Goal] return",
+                "            if(ISBLANK(x),BLANK(),",
+                "                    If(x<0.9,1,",
+                "\t                If(x<0.97,0,-1)",
+                "                )",
+                "            )",
+                "            "
+              ],
+              "annotations": [
+                {
+                  "name": "GoalType",
+                  "value": "Measure"
+                },
+                {
+                  "name": "KpiStatusType",
+                  "value": "LinearReversed"
+                },
+                {
+                  "name": "KpiThresholdType",
+                  "value": "Percentage"
+                },
+                {
+                  "name": "KpiThresholdOrdering",
+                  "value": "Ascending"
+                },
+                {
+                  "name": "KpiThresholdCount",
+                  "value": "2"
+                },
+                {
+                  "name": "KpiThreshold_0",
+                  "value": "90"
+                },
+                {
+                  "name": "KpiThreshold_1",
+                  "value": "97"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Last_Year_Fatalities",
+            "expression": "CALCULATE(SUM(CRASH_DATA_T[FATALITIES]),DATEADD(MasterCalendar_T[Date],-1, YEAR))",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Counts_of_Crashes",
+            "expression": "COUNT(CRASH_DATA_T[CRASH_KEY])"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[CRASH_DATA_T].* FROM [dbo].[CRASH_DATA_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "CRASH_DATA_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "CSRFCND_T",
+        "columns": [
+          {
+            "name": "CSRFCND",
+            "dataType": "int64",
+            "sourceColumn": "CSRFCND",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "SURFACE_CONDITION",
+            "dataType": "string",
+            "sourceColumn": "SURFACE_CONDITION",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CSRFCND_T",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [dbo].[CSRFCND_T].* FROM [dbo].[CSRFCND_T] ",
+              "dataSource": "JWANG23SQL2016SSDB "
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[CSRFCND_T].* FROM [dbo].[CSRFCND_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "CSRFCND_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "DynamicSecurity_T",
+        "columns": [
+          {
+            "name": "ID",
+            "dataType": "int64",
+            "sourceColumn": "ID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "UserName",
+            "dataType": "string",
+            "sourceColumn": "UserName",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Weather_ID",
+            "dataType": "int64",
+            "sourceColumn": "Weather_ID",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DynamicSecurity_T",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [dbo].[DynamicSecurity_T].* FROM [dbo].[DynamicSecurity_T] ",
+              "dataSource": "JWANG23SQL2016SSDB "
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[DynamicSecurity_T].* FROM [dbo].[DynamicSecurity_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "DynamicSecurity_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "LIGHT_T",
+        "columns": [
+          {
+            "name": "LIGHT",
+            "dataType": "int64",
+            "sourceColumn": "LIGHT",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "LIGHT_CONDITION",
+            "dataType": "string",
+            "sourceColumn": "LIGHT_CONDITION",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "LIGHT_T",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [dbo].[LIGHT_T].* FROM [dbo].[LIGHT_T] ",
+              "dataSource": "JWANG23SQL2016SSDB "
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[LIGHT_T].* FROM [dbo].[LIGHT_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "LIGHT_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "MAJCSE_T",
+        "columns": [
+          {
+            "name": "MAJCSE",
+            "dataType": "int64",
+            "sourceColumn": "MAJCSE",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "MAJOR_CAUSE",
+            "dataType": "string",
+            "sourceColumn": "MAJOR_CAUSE",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "MAJCSE_T",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [dbo].[MAJCSE_T].* FROM [dbo].[MAJCSE_T] ",
+              "dataSource": "JWANG23SQL2016SSDB "
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[MAJCSE_T].* FROM [dbo].[MAJCSE_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "MAJCSE_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Manner_of_Crash",
+        "columns": [
+          {
+            "name": "Manner_of_Crash_ID",
+            "dataType": "int64",
+            "sourceColumn": "Manner_of_Crash_ID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Manner_of_Crash",
+            "dataType": "string",
+            "sourceColumn": "Manner_of_Crash",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Manner_of_Crash",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [dbo].[Manner_of_Crash].* FROM [dbo].[Manner_of_Crash] ",
+              "dataSource": "JWANG23SQL2016SSDB "
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Manner_of_Crash].* FROM [dbo].[Manner_of_Crash] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Manner_of_Crash"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "MasterCalendar_T",
+        "columns": [
+          {
+            "name": "MasterCalendarKey",
+            "dataType": "int64",
+            "sourceColumn": "MasterCalendarKey",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Quarter_Name",
+            "dataType": "string",
+            "sourceColumn": "Quarter_Name",
+            "sortByColumn": "Quarter_Num",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Quarter_Num",
+            "dataType": "int64",
+            "sourceColumn": "Quarter_Num",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Month_Name",
+            "dataType": "string",
+            "sourceColumn": "Month_Name",
+            "sortByColumn": "Month_Num",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Month_Num",
+            "dataType": "int64",
+            "sourceColumn": "Month_Num",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Day_Name",
+            "dataType": "string",
+            "sourceColumn": "Day_Name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Day_Num",
+            "dataType": "int64",
+            "sourceColumn": "Day_Num",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "MasterCalendar_T",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [dbo].[MasterCalendar_T].* FROM [dbo].[MasterCalendar_T] ",
+              "dataSource": "JWANG23SQL2016SSDB "
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Calendar_YQMD",
+            "levels": [
+              {
+                "name": "Year",
+                "ordinal": 0,
+                "column": "Year"
+              },
+              {
+                "name": "Quarter_Name",
+                "ordinal": 1,
+                "column": "Quarter_Name"
+              },
+              {
+                "name": "Month_Name",
+                "ordinal": 2,
+                "column": "Month_Name"
+              },
+              {
+                "name": "Date",
+                "ordinal": 3,
+                "column": "Date"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[MasterCalendar_T].* FROM [dbo].[MasterCalendar_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "MasterCalendar_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Severity_T",
+        "columns": [
+          {
+            "name": "Severity_ID",
+            "dataType": "int64",
+            "sourceColumn": "Severity_ID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Severity_Descr",
+            "dataType": "string",
+            "sourceColumn": "Severity_Descr",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Severity_T",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [dbo].[Severity_T].* FROM [dbo].[Severity_T] ",
+              "dataSource": "JWANG23SQL2016SSDB "
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Severity_T].* FROM [dbo].[Severity_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Severity_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "WEATHER_T",
+        "columns": [
+          {
+            "name": "WEATHER",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "sourceColumn": "WEATHER",
+            "sortByColumn": "WEATHER_CONDITION",
+            "sourceProviderType": "Integer",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "WEATHER_CONDITION",
+            "dataType": "string",
+            "description": "Weather at time of crash",
+            "sourceColumn": "WEATHER_CONDITION",
+            "sourceProviderType": "Char",
+            "isDefaultLabel": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "WEATHER_T",
+            "dataView": "full",
+            "source": {
+              "query": " SELECT [dbo].[WEATHER_T].* FROM [dbo].[WEATHER_T] ",
+              "dataSource": "JWANG23SQL2016SSDB "
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[WEATHER_T].* FROM [dbo].[WEATHER_T] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "WEATHER_T"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Last_5_Years_T",
+        "dataCategory": "Time",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "MasterCalendarKey",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "MasterCalendar_T[MasterCalendarKey]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isKey": true,
+            "sourceColumn": "MasterCalendar_T[Date]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Year",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "MasterCalendar_T[Year]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Quarter_Name",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "MasterCalendar_T[Quarter_Name]",
+            "sortByColumn": "Quarter_Num"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Quarter_Num",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "MasterCalendar_T[Quarter_Num]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Month_Name",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "MasterCalendar_T[Month_Name]",
+            "sortByColumn": "Month_Num"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Month_Num",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "MasterCalendar_T[Month_Num]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Day_Name",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "MasterCalendar_T[Day_Name]"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Day_Num",
+            "dataType": "int64",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "sourceColumn": "MasterCalendar_T[Day_Num]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "FILTER(MasterCalendar_T,MasterCalendar_T[Date]>=DATEADD(MasterCalendar_T[Date], 6, YEAR))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Calendar_YQMD",
+            "levels": [
+              {
+                "name": "Year",
+                "ordinal": 0,
+                "column": "Year"
+              },
+              {
+                "name": "Quarter_Name",
+                "ordinal": 1,
+                "column": "Quarter_Name"
+              },
+              {
+                "name": "Month_Name",
+                "ordinal": 2,
+                "column": "Month_Name"
+              },
+              {
+                "name": "Date",
+                "ordinal": 3,
+                "column": "Date"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "e138cacc-80d2-4025-a9f5-662fc8d8da82",
+        "fromTable": "CRASH_DATA_T",
+        "fromColumn": "CSRFCND",
+        "toTable": "CSRFCND_T",
+        "toColumn": "CSRFCND"
+      },
+      {
+        "name": "66a8e448-b6e9-4f4e-ab1b-5eb33337d7e8",
+        "fromTable": "CRASH_DATA_T",
+        "fromColumn": "MAJCSE",
+        "toTable": "MAJCSE_T",
+        "toColumn": "MAJCSE"
+      },
+      {
+        "name": "f6a389fa-bf8a-4c31-8cbb-e1af466e2c61",
+        "fromTable": "CRASH_DATA_T",
+        "fromColumn": "LIGHT",
+        "toTable": "LIGHT_T",
+        "toColumn": "LIGHT"
+      },
+      {
+        "name": "e2ced1fe-f0e8-4574-8eeb-970930c1221b",
+        "fromTable": "CRASH_DATA_T",
+        "fromColumn": "WEATHER",
+        "toTable": "WEATHER_T",
+        "toColumn": "WEATHER"
+      },
+      {
+        "name": "a94789bd-7b10-4ea8-9ce1-771f219cc6b6",
+        "fromTable": "CRASH_DATA_T",
+        "fromColumn": "CRASH_DATE",
+        "toTable": "Last_5_Years_T",
+        "toColumn": "Date"
+      }
+    ],
+    "perspectives": [
+      {
+        "name": "Weather",
+        "tables": [
+          {
+            "name": "CRASH_DATA_T",
+            "columns": [
+              {
+                "name": "CASENUMBER"
+              }
+            ]
+          },
+          {
+            "name": "MasterCalendar_T",
+            "hierarchies": [
+              {
+                "name": "Calendar_YQMD"
+              }
+            ]
+          },
+          {
+            "name": "WEATHER_T",
+            "columns": [
+              {
+                "name": "WEATHER_CONDITION"
+              }
+            ]
+          },
+          {
+            "name": "CSRFCND_T",
+            "columns": [
+              {
+                "name": "SURFACE_CONDITION"
+              }
+            ]
+          },
+          {
+            "name": "LIGHT_T",
+            "columns": [
+              {
+                "name": "LIGHT_CONDITION"
+              }
+            ]
+          },
+          {
+            "name": "MAJCSE_T",
+            "columns": [
+              {
+                "name": "MAJOR_CAUSE"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
